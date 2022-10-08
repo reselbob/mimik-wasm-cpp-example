@@ -19,7 +19,7 @@ void http_event_handler(const http_event &evt) {
 
   cppjson doc;
 
-  doc["message"] = dt;
+  doc["current_time"] = dt;
   auto data = doc.dump();
 
   response().send(data);
